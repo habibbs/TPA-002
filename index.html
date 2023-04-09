@@ -8,27 +8,31 @@
    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-   <header>
-      <h1>Check Your BMI</h1>
-      <p>Enter your weight and height below to check your BMI result</p>
-   </header>
    <main>
-        <div class="container">
-         <form action="#">
-            <div class="form-group">
-               <label for="weight">Put your weight in here ( KG )</label><br>
-               <input type="text" name="weight" id="weight" placeholder="masukkan berat badan anda" required>
-            </div>
-            <div class="form-group">
-               <label for="height">And your height in here ( CM )</label><br>
-               <input type="text" name="height" id="height" placeholder="masukkan tinggi badan anda" required>
-            </div>
-            <button type="submit" id="submit">Calculate BMI</button>
-         </form>
-         <br>
-         <span id="result"></span>
-        </div>
+      <div class="hero">
+         <h1>=== Check Your BMI ===</h1>
+         <p>Enter your weight and height below to check your BMI result</p>
+      </div>
+      <div class="container">
+            <form action="#">
+               <div class="form-group">
+                  <label for="weight">Put your weight in here ( KG )</label><br>
+                  <input type="text" name="weight" id="weight" placeholder="masukkan berat badan anda" required>
+               </div>
+               <div class="form-group">
+                  <label for="height">And your height in here ( CM )</label><br>
+                  <input type="text" name="height" id="height" placeholder="masukkan tinggi badan anda" required>
+               </div>
+               <button type="submit" id="submit">Calculate BMI</button>
+            </form>
+      </div>
+      <div class="jawaban">
+         <span id="result-bmi"></span>
+         <br><hr>
+         <span id="result-katg"></span>
+      </div>
    </main>
+
 
    <script src="/assets/javascript/script.js"></script>
 </body>

@@ -3,27 +3,31 @@
 * {
    font-family: 'Signika Negative';
    font-size: 20px;
-   margin: 0;
+   margin: 0 auto;
 }
 
 body {
-   margin: 50px auto;
+   background-color: #0096C7;
 }
 
-header {
+.hero {
    text-align: center;
+   background-color: #0077B6;
+   padding: 15px 0;
 }
 
-header h1 {
+.hero h1 {
    font-family: 'Bebas Neue';
-   font-size: 4rem;
+   font-size: 2.5rem;
    letter-spacing: 5px;
 }
 
 main {
-   margin-top: 20px;
-   display: flex;
-   justify-content: center;
+   margin-top: 75px;
+   background-color: #CAF0F8;
+   width: 40%;
+   border-radius: 15px;
+   height: 500px;
 }
 
 main form {
@@ -45,9 +49,8 @@ main form input {
 }
 
 main form button {
-   width: 30%;
-   align-self: flex-end;
    margin-top: 20px;
+   margin-bottom: 20px;
    padding: 10px 15px;
    border-radius: 8px;
    border: none;
@@ -58,4 +61,15 @@ main form button {
 
 main form button:hover {
    background-color: #90E0EF;
+}
+
+main .jawaban {
+   margin-top: 20px;
+   width: 40%;
+   height: 50px;
+   text-align: center;
+   padding: 10px 30px;
+   background-color: #ADE8F4;
+   border-radius: 8px;
+   box-shadow: 2px 3px 1px gray;
 }
