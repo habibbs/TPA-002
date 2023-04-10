@@ -8,17 +8,17 @@ formBMI.addEventListener('submit', (event) => {
    event.preventDefault();
    const hasil = (BB.value / ( TB.value / 100 ) ** 2).toFixed(1);
    
-   if (hasil <= 18.5) {
-      kategori = "Berat badan kurang";
+   if (hasil < 18.5) {
+      kategori = "Underweight";
       katg.style.color = "blue";
-   } else if ( (hasil <= 24.9) && (hasil > 18.5) ) {
-      kategori = "Berat badan normal";
+   } else if ( (hasil <= 24.9) && (hasil >= 18.5) ) {
+      kategori = "Normal Weight";
       katg.style.color = "green";
    } else if ( (hasil <= 29.9) && (hasil >= 25) ) {
-      kategori = "Kegemukan";
+      kategori = "Overweight";
       katg.style.color = "orangered";
    } else if (hasil >= 30) {
-      kategori = "Obesitas";
+      kategori = "Obesity";
       katg.style.color = "red";
    }
    bmi.textContent = `${hasil}`;

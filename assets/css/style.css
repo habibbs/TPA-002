@@ -7,12 +7,12 @@
 }
 
 body {
-   background-color: #0096C7;
+   background-color: #0077b6;
 }
 
 .hero {
    text-align: center;
-   background-color: #0077B6;
+   background-color: #00509D;
    padding: 15px 0;
 }
 
@@ -20,11 +20,16 @@ body {
    font-family: 'Bebas Neue';
    font-size: 2.5rem;
    letter-spacing: 5px;
+   color: #FFFFFF;
+}
+
+.hero p {
+   color: #FFFFFF;
 }
 
 main {
    margin-top: 75px;
-   background-color: #CAF0F8;
+   background-color: #edf2fb;
    width: 40%;
    border-radius: 15px;
    height: 500px;
@@ -43,8 +48,7 @@ main form input {
    width: 500px;
    padding: 10px 10px;
    border-radius: 5px;
-   border: 1px solid gray;
-   box-shadow: 1px 1px 2px black;
+   border: 1px solid #c1d3fe;
    font-weight: lighter;
 }
 
@@ -54,13 +58,13 @@ main form button {
    padding: 10px 15px;
    border-radius: 8px;
    border: none;
-   background-color: #00B4D8;
+   background-color: #00509D;
    color: white;
    box-shadow: 2px 2px 1px gray;
 }
 
 main form button:hover {
-   background-color: #90E0EF;
+   background-color: #90e0ef; 
 }
 
 main .jawaban {
@@ -69,7 +73,11 @@ main .jawaban {
    height: 50px;
    text-align: center;
    padding: 10px 30px;
-   background-color: #ADE8F4;
+   background-color: #e2eafc;
    border-radius: 8px;
    box-shadow: 2px 3px 1px gray;
+}
+
+main #result-bmi {
+   font-weight: bolder;
 }
