@@ -1,12 +1,13 @@
 const BB = document.getElementById('weight');
 const TB = document.getElementById('height');
-const btn = document.getElementById('submit');
-const bmi = document.querySelector('#result-bmi');
-const katg = document.querySelector('#result-katg');
+const formBMI = document.querySelector('#form-bmi');
+const bmi = document.getElementById('result-bmi');
+const katg = document.getElementById('result-katg');
 
-btn.addEventListener('click', function() {
-   const hasil = BB.value / ( TB.value / 100 ) ** 2;
-
+formBMI.addEventListener('submit', (event) => {
+   event.preventDefault();
+   const hasil = (BB.value / ( TB.value / 100 ) ** 2).toFixed(1);
+   
    if (hasil <= 18.5) {
       kategori = "Berat badan kurang";
       katg.style.color = "blue";
@@ -22,6 +23,8 @@ btn.addEventListener('click', function() {
    }
    bmi.textContent = `${hasil}`;
    katg.textContent = `${kategori}`;
+
+   formBMI.reset();
 });
 
 
